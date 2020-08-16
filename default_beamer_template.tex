@@ -1,0 +1,63 @@
+\documentclass{beamer}
+\usetheme{default}
+\usepackage{amssymb} 
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
+\definecolor{fore}{RGB}{248,248,242}
+\definecolor{back}{RGB}{40,42,54}
+\definecolor{title}{RGB}{255,121,198}
+%\definecolor{title}{RGB}{255,85,85}
+
+\usepackage[labelfont={color=title,small},font=small,skip=1pt]{caption}
+
+\setbeamercolor{titlelike}{fg=title}
+\setbeamercolor{normal text}{fg=fore,bg=back}
+
+\usepackage{listings,bera}
+
+\definecolor{keywords}{RGB}{225,85,85}
+\definecolor{comments}{RGB}{80,250,123}
+
+%\lstset{language=Python,
+	%keywordstyle=color{keywords},
+	%commentstyle=color{comments}emph}
+
+\setbeamercolor{itemize item}{fg=fore} 
+\setbeamercolor{itemize subitem}{fg=fore}
+\setbeamertemplate{caption}[numbered]
+
+%\setbeamertemplate{navigation symbols}{}\\
+\setbeamertemplate{navigation symbols}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fore]{footline}%
+	\hspace{1em}%
+	\insertframenumber
+}
+
+\setbeamerfont{footline}{series=\bfseries}
+
+\begin{document}
+	
+	\title{Insert Title}
+	\institute{Institute of Biomaterials and Biomedical Engineering}
+	\author{Matt C. McFee}
+	\date{\today}
+	\maketitle
+	
+	\begin{frame}
+	\frametitle{Cool frame}
+	Hello, world!
+	
+	This is a \textcolor{keywords}{keyword}
+	
+	This is a \textcolor{comments}{comment}
+	
+	\begin{itemize}
+		\item hey
+		\
+	\end{itemize}
+	\end{frame}
+	
+\end{document}
